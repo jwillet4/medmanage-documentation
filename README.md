@@ -132,7 +132,7 @@ Editing is performed by either double-clicking the row with the medicine you wou
 
 ##### Status Progression
 
-Status progression is performed by clicking the status progression button under the `Progress` field. When using the program usually, only medicines you own will be available to progress. If using the program in admin mode, you will have the option of progressing any medicine in the list. The status progression window is covered [here](#status-progression-window).
+Status progression is performed selecting medicine rows, and if they are of the same status and owned by the user, a progression button will appear in the top right of the grid. When using the program usually, only medicines you own will be available to progress. If using the program in admin mode, you will have the option of progressing any medicine in the list. The status progression window is covered [here](#status-progression-window).
 ![enter image description here](https://s5.gifyu.com/images/status-list.gif)
 ##### Pagination
 
@@ -235,7 +235,10 @@ The settings page currently holds only one option, to allow admins to swap into 
 
 ## Editing Window
 
-The editing window is aptly named for its ability to edit medications. With this window, you can edit all the fields of medications needed for the processes on the MedManager tool. Most of the fields are self-explanitory; there are only a few that need additional explaining about what the field is or how its input device functions:
+**New Feature**
+When editing a medicine, a new HTTP request will be sent out and grab the rxNorm of that medicine from the MedMap. When auto-naming medicines, the result may be inconsistent. By displaying the rxNorm, it will be easier to check these medicines names.
+
+The editing window is aptly named for its ability to edit medications. With this window, you can edit all the fields of medications needed for the processes on the MedManager tool. Most of the fields are self-explanatory; there are only a few that need additional explaining about what the field is or how its input device functions:
 - **Input Boxes with Down Arrows:** The vast majority of these boxes are called combo boxes. These function the same as drop down boxes except with the added benefit of allowing the user to type in part of what they would like to select to filter the results shown in the drop down list.
 - **Customers:** This is a multi-selection box. To use it, begin typing and select the customer from the drop down list that appears. As many customers can be added to each medicine as needed.
 - **Due Date:** This calendar selection box will allow you to view a calendar and select a specific date via a GUI. The date can also be typed in and will also be auto-formatted. 
@@ -284,7 +287,7 @@ A hop is a representation of certain tasks that need to be performed in the proc
 
 ### Flow
 
-![](https://i.ibb.co/Wvyh77m/status-paths.png)
+![](https://i.ibb.co/TrCw91N/status-paths-1.png)
 
 ### Routing tables
 
@@ -346,9 +349,9 @@ A hop is a representation of certain tasks that need to be performed in the proc
 
 |Clone (A)       |Values                         
 |----------------|-------------------------------
-|Next Hops	 |`Research`            
+|Next Hops	 |`Research, Approved`            
 |Owners          |`Kim`            
-|Default Hop     |`Research`
+|Default Hop     |`Approved`
 |Default Owner   |`Kim`
 
 |Approved        |Values                         
