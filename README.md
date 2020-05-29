@@ -2,7 +2,7 @@
 
 The MedManager tool is a tool for our clinical pharmacists to organize the medication research process. MedManage acts as a hub for each person to perform their tasks in an individually customized environment and track the medications to provide more safeguards and structure than previous efforts.
 
-*For any questions, please contact Logan Willett at Logan.Willett@fdbhealth.com or message him through Teams*
+*For any questions, please contact Ryan Graham at Ryan.Graham@fdbhealth.com or message him through Teams*
 
 ## Table of Contents
 
